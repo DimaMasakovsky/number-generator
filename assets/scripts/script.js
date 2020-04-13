@@ -1,3 +1,16 @@
+var min = document.getElementById("min");
+var max = document.getElementById("max");
+var quantity = document.getElementById("quantity");
+var output = document.getElementById("output");
+var button = document.getElementById("button");
+var array; 
+
+button.addEventListener("click", () => { 
+  output.value = getRandomSequence(+min.value, +max.value, +quantity.value).join(" "); 
+
+});
+
+
 function getRandomNumber(min, max) { 
  return Math.floor(Math.random() * (max - min + 1)) + min;
 }
@@ -9,4 +22,4 @@ function getRandomSequence(min, max, quantity) {
   return result; 
 }
 
-console.log(getRandomSequence(1,3,20)); 
+console.log(getRandomSequence(12,15,5)); 
