@@ -4,31 +4,34 @@
     <title>random.num()</title> 
     <meta charset="UTF-8">
     <link href="assets/styles/style.css" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Prompt:wght@400;500&display=swap" rel="stylesheet"> 
   </head>
   <body> 
-    <header> 
-      <h1>random.num()</h1>
-    </header>
-    <section> 
-      <div class="min-max-box"> 
-        <div class="min-box">
-          <label>Min:</label>
-          <input id="min" type="number" placeholder="Min">
-        </div> 
-        <div class="max-box"> 
-          <label>Max:</label>
-          <input id="max" type="number" placeholder="Max">
+    <div class="main">
+      <header> 
+        <h1>random.num()</h1>
+      </header>
+      <section> 
+        <div class="min-max-box"> 
+          <div class="label-box">
+            <label>Min:</label>
+            <input class="border-box" id="min" type="number" placeholder="Min">
+          </div> 
+          <div class="label-box"> 
+            <label>Max:</label>
+            <input class="border-box" id="max" type="number" placeholder="Max">
+          </div>
         </div>
-      </div>
-      <div>
-        <label>Quantity:</label>
-        <input id="quantity" type="number" placeholder="Quantity"> 
-      </div>
-      <button id="button" type="button">Generate!</button>
-      <div> 
-        <output id="output"></output>
-      </div>
-    </section>
+        <div class="label-box">
+          <label>Quantity:</label>
+          <input class="border-box" id="quantity" type="number" placeholder="Quantity"> 
+        </div>
+        <button id="button" type="button">Generate!</button>
+        <div class="textarea-div"> 
+          <textarea id="output" class="border-box" readonly placeholder="Result"></textarea>
+        </div>
+      </section>
+    </div> 
     <script src="assets/scripts/script.js"></script>
   </body>
 </html>
