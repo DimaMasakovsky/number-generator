@@ -3,65 +3,75 @@ html {
   font-family: Prompt, Helvetica, sans-serif;
   font-weight: 500; 
 }
+h1 { 
+  font-size: 24px;
+  margin: 0px 10px;
+  letter-spacing: 5px;
+}
 body { 
-  margin: 0px;
+  margin: 0px 10px;
+  background-color: #fffd70;
+}
+textarea { 
+  resize: none;
+  font-family: Prompt, Helvetica, sans-serif;
+  font-weight: 400;
+  width: 100%;
+  box-sizing: border-box;
+  min-height: 20vh;
 }
 input { 
   font-family: Prompt, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  padding-left: 2px;
 }
 button { 
-  margin: 5px 10px;
   background-color: blue;
   border: none; 
   color: white; 
   font-family: Prompt, Helvetica, sans-serif;
   font-weight: 400;
   font-size: 14px;
-  text-decoration: none;
-  
-}
-textarea { 
-  width: 100%;
-  min-height: 150px;
-  resize: none;
-  font-family: Prompt, Helvetica, sans-serif;
-  font-weight: 400;
-  box-sizing: border-box;
-}
-.textarea-div {   
-  margin: 5px 10px; 
+  text-decoration: none;  
+  min-height: 5vh;
 }
 .border-box { 
   border: 3px solid blue;
-}
-.main { 
-  max-width: 100%;
-  min-width: 100px;
-  margin: 0 auto;   
-  background-color: #fffd70;
-}
-h1 { 
-  font-size: 24px;
-  margin: 0px 10px;
-  letter-spacing: 5px;
-}
-section { 
-  display: flex;
-  flex-direction: column;
-}
-.min-max-box { 
-  display: flex;
 }
 .label-box { 
   display: flex; 
   flex-direction: column;
   flex: 1; 
-  margin: 5px 10px;
+}
+.main { 
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 10px;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  grid-template-areas: 
+  "a a"
+  "b c"
+  "d d"
+  "e e"
+  "f f";
+}
+.grid-a { 
+  grid-area: a;
+}
+.grid-b { 
+  grid-area: b;
+}
+.grid-c { 
+  grid-area: c;
+}
+.grid-d { 
+  grid-area: d; 
+}
+.grid-e { 
+  grid-area: e;
+}
+.grid-f { 
+  grid-area: f;
 }
 
-textarea:focus { 
-   
-}
