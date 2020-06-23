@@ -6,8 +6,12 @@ var button = document.getElementById("button");
 var array; 
 
 button.addEventListener("click", () => { 
+  if (+min.value > +max.value) {
+    output.value = "Max should be greater than min!";
+  } else if (+quantity.value <= 0 ) {
+    output.value = "Quantity should be more then 0";
+  } else 
   output.value = getRandomSequence(+min.value, +max.value, +quantity.value).join(" "); 
-
 });
 
 
